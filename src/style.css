@@ -1,0 +1,166 @@
+ body {
+     min-height: 100vh;
+     margin: 0;
+     padding: 0;
+     background-color: rgb(4, 66, 66);
+     font-family: 'ra';
+
+
+ }
+
+ @font-face {
+    font-family: 'ra';
+    src: url('/src/fonts/Playwrite_FR_Moderne/static/PlaywriteFRModerne-Light.ttf') format('truetype');
+}
+ .grid-contain {
+     display: grid;
+     grid-template-columns: 2.5fr 6fr 3.5fr;
+     grid-template-rows: repeat(3, 1fr);
+     height: 100vh;
+
+ }
+
+ .over-all {
+    border: 1px solid rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 1fr 2.5fr 3fr;
+    grid-row: 1/-1;
+    grid-column: 1/2;
+    margin: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+ }
+
+
+ .title {
+    grid-row: 1/2;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-size: 0.9rem;
+    padding-top: 50px;
+    position: relative; /* Needed for positioning the pseudo-element */
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust this value to control the distance of the line from text */
+    left: 0;
+    width: 100%; /* Adjust this value to control the width of the line */
+    height: 2px; /* Adjust this value to control the thickness of the line */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    border-radius: 5px; /* Adjust this value to control the curve radius */
+    transform-origin: center;
+    transform: scaleX(0.7);
+}
+
+
+.status {
+    grid-row: 2/3;
+    height: 121px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+    background-color: rgba(22, 63, 63, 0.8); /* Semi-transparent background */
+    margin-top: 35px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    position: relative; /* Required for absolute positioning */
+    overflow: hidden; /* Hide overflow content */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+}
+
+/* Optional: Adjust children elements */
+.status > * {
+    position: relative; /* Ensure children respect parent's positioning */
+    z-index: 1; /* Ensure children are above the blurred background */
+}
+
+/* Optional: Pseudo-element to create a subtle gradient overlay */
+.status::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%);
+    z-index: 0; /* Behind other content */
+    pointer-events: none; /* Allow interaction with content behind */
+}
+.status-tit {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    font-size: 0.7rem;
+    color:#e7e6e6;
+
+
+
+  }
+
+
+  .search-bar{
+    grid-row: 3/4;
+  }
+
+
+  .earth img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+ 
+
+.location {
+    height: 30px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align items vertically */
+    background-color: rgba(11, 46, 46, 0.8); /* Semi-transparent background color */
+    margin-bottom: 35px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    overflow: hidden; /* Hide overflow content */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    position: relative; /* Required for z-index */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
+}
+
+#locationDisplay {
+    font-size: 0.7rem;
+    color: #ffffff; /* White text color */
+    font-family: 'ra'; /* Specify your font-family */
+    z-index: 1; /* Ensure text is above blurred background */
+    position: relative; /* Ensure z-index works */
+    max-width: 100%; /* Ensure text does not exceed container width */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
+}
+
+
+input {
+    border: none;
+    background: none;
+     outline: none; /* Remove focus outline */
+    font-size: 0.7rem;
+    color:#e7e6e6;
+    font-family: 'ra';
+    width: 100%; /* Ensure full width */
+}
+
+/* Optional: Style the placeholder text */
+::placeholder {
+    font-size: 0.7rem;
+    color:#e7e6e6;
+    font-family: 'ra';
+
+}
+
+
+ 
