@@ -145902,12 +145902,13 @@
       
 
 };
-window.onload = function () {
+let selectedCity = ''; // Declare selectedCity outside the function
+
+export function initializeLocationSearch() {
     var searchInput = document.getElementById("searchInput");
     var datalist = document.getElementById("places");
     var locationDisplay = document.getElementById("locationDisplay");
     var userInput = ''; // Variable to store user input
-    var selectedCity = ''; // Variable to store selected city
 
     // Function to populate datalist based on search input
     searchInput.addEventListener("input", function() {
@@ -145948,14 +145949,12 @@ window.onload = function () {
 
         // Update userInput variable if there is a match in datalist
         if (foundMatch) {
-            // Reset userInput to empty string
-            userInput = '';
+            userInput = ''; // Reset userInput to empty string
         }
     });
 
     // Handle selection from datalist
     searchInput.addEventListener("change", function() {
-        // Set userInput to the selected value from datalist
         userInput = this.value.trim().toLowerCase(); // Save the selected value in lowercase
         
         // Extract the selected city (assuming it's after the last ' - ')
@@ -145972,16 +145971,9 @@ window.onload = function () {
         locationDisplay.textContent = userInput;
     });
 
-    // Handle form submission (optional)
-    document.getElementById("myForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-        // Check if selectedCity is not empty before using it
-        if (selectedCity) {
-            console.log("Selected city (on submit):", selectedCity);
-            // Perform action with selectedCity when form is submitted
-        } else {
-            console.log("No valid city selected.");
-            // Handle case when no valid city is selected
-        }
-    });
-};
+   
+}
+ 
+export { selectedCity };
+
+ 

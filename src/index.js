@@ -1,25 +1,28 @@
-import { fetchWeatherData } from "./fetch";
+import { aaa, fetchWeatherData } from "./fetch";
+import { initializeLocationSearch } from "./Country+State+District-City-Data"
+import { updateWeatherUI, getDaysOfWeek } from "./ui";
 
-fetchWeatherData()
-  .then(function(data) {
-    // Success handling: `data` contains the weather data
-    console.log('Weather data:', data);
-    // Perform further operations with the data
-  })
-  .catch(function(error) {
-    // Error handling
-    console.error('Error fetching data:', error);
-  });
- 
-  
 
-window.onload = function () {
-    var searchInput = document.getElementById("searchInput");
-    var locationDisplay = document.getElementById("locationDisplay");
 
-    // Function to update location display
-    searchInput.addEventListener("input", function() {
-        var userInput = this.value.trim();
-        locationDisplay.textContent = userInput;
-    });
-};
+initializeLocationSearch()
+
+
+
+// Event listener to fetch weather data
+document.getElementById('searchInput').addEventListener('change', function () {
+    const selectedCity = this.value.trim(); // Get selected city from input
+    if (selectedCity) {
+        fetchWeatherData(selectedCity)
+            .then(weatherData => {
+                console.log('Weather data:', weatherData);
+                getDaysOfWeek()
+                updateWeatherUI()
+            })
+            .catch(error => {
+                console.error('Error fetching weather data:', error);
+            });
+    }
+});
+
+
+
