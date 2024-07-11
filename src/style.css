@@ -4,6 +4,8 @@
      padding: 0;
      background-color: rgb(4, 66, 66);
      font-family: 'ra';
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     /* Add text shadow for better visibility */
 
 
  }
@@ -30,6 +32,7 @@
      margin: 30px;
      border-radius: 20px;
      backdrop-filter: blur(10px);
+
  }
 
 
@@ -85,6 +88,10 @@
      /* Hide overflow content */
      backdrop-filter: blur(10px);
      /* Apply a blur effect to the background */
+     max-width: 190px;
+     /* Adjust the max-width as per your design */
+     overflow: hidden;
+     /* Prevent content overflow */
  }
 
  /* Optional: Adjust children elements */
@@ -124,6 +131,7 @@
 
  .search-bar {
      grid-row: 3/4;
+
  }
 
 
@@ -177,6 +185,8 @@
      /* Hide overflow content */
      text-overflow: ellipsis;
      /* Show ellipsis (...) for overflow text */
+     max-width: 190px;
+     /* Adjust the max-width as per your design */
  }
 
 
@@ -208,6 +218,9 @@
      display: flex;
      gap: 40px;
      color: #ffffff;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     /* Add text shadow for better visibility */
+
  }
 
 
@@ -241,16 +254,18 @@
      padding-top: 3px;
      border: 1px solid rgb(255, 255, 255);
      backdrop-filter: blur(10px);
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     /* Add text shadow for better visibility */
 
 
  }
 
  .max::before {
      content: "H";
-      position: absolute;
-      left: 5px;
-      top:  3px;
-  }
+     position: absolute;
+     left: 5px;
+     top: 3px;
+ }
 
  .min::before {
      content: "L";
@@ -268,11 +283,150 @@
      grid-row: 2/3;
      grid-column: 2/3;
      margin-top: 100px;
-     color: #9b9393;
+     color: #ffffff;
      font-size: 2.0rem;
-      font-weight: 900;
-      opacity: 0.5;
+     font-weight: 900;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     /* Add text shadow for better visibility */
 
 
 
+ }
+
+ .days {
+     grid-row: 3/4;
+     grid-column: 2/-1;
+     display: flex;
+     justify-content: space-between;
+     color: #ffffff;
+     font-weight: 600;
+     padding-right: 30px;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     /* Add text shadow for better visibility */
+
+ }
+
+ .day-Card {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+     /* Needed for absolute positioning of the line */
+
+ }
+
+ .days::after {
+     content: '';
+     position: absolute;
+     top: 480px;
+     /* Initial position */
+     left: 0;
+     width: 100%;
+     height: 1px;
+     /* Thickness of the line */
+     background-color: #ffffff;
+     /* Color of the line */
+     z-index: -1;
+     /* Ensure it's behind the content */
+     background-image: url(/src/images/cloudy.jpg);
+ }
+
+
+
+
+ .temp1,
+ .temp2,
+ .temp3 {
+     padding-top: 90px;
+     font-size: 1.2rem;
+     justify-content: center;
+ }
+
+ .day1,
+ .day2,
+ .day3 {
+     cursor: pointer;
+ }
+
+
+ .lastCity {
+     display: flex;
+     grid-row: 2/3;
+     grid-column: 3/4;
+     gap: 10px;
+     justify-content: flex-end;
+     padding-right: 30px;
+
+ }
+
+ .card,
+ .card2 {
+     border: 1px solid rgb(255, 255, 255);
+     width: 140px;
+     height: 110px;
+
+     border-radius: 20px;
+     backdrop-filter: blur(10px);
+
+ }
+
+
+ .upper {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ .icon-upper1,
+ .icon-upper2 {
+     width: 50px;
+     height: 50px;
+
+
+
+ }
+
+
+ .location1,
+ .location2 {
+     display: flex;
+     overflow: hidden;
+     /* Hide any content that overflows */
+     white-space: nowrap;
+     /* Ensure the text stays on one line */
+     text-overflow: ellipsis;
+     /* Show an ellipsis (...) when text overflows */
+     width: 150x;
+     /* Adjust width as needed */
+     height: 22px;
+     /* Adjust height as needed */
+     font-size: 0.7rem;
+     font-weight: 900;
+     justify-content: center;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     /* Add text shadow for better visibility */
+     padding-top: 5px;
+
+ }
+
+
+ .condition1,
+ .condition2 {
+     display: flex;
+     overflow: hidden;
+     /* Hide any content that overflows */
+     white-space: nowrap;
+     /* Ensure the text stays on one line */
+     text-overflow: ellipsis;
+     /* Show an ellipsis (...) when text overflows */
+     width: 150x;
+     /* Adjust width as needed */
+     height: 22px;
+     /* Adjust height as needed */
+     font-size: 0.7rem;
+     font-weight: 900;
+     justify-content: center;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
  }

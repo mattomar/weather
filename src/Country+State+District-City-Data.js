@@ -145969,11 +145969,11 @@ export function initializeLocationSearch() {
         
         // Display selected value in locationDisplay div
         locationDisplay.textContent = userInput;
-    });
+     });
 
    
 }
  
-export { selectedCity };
+export { selectedCity  };
 
  
