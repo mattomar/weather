@@ -30,16 +30,16 @@ import { dayNameF1, dayNameF2,dayNameF3 } from './ui';
 export function updateWeatherUI3() {
     // Update UI elements with weatherData
     // Example: assuming there are DOM manipulation methods
-    document.querySelector('.avg').textContent = avrgTemPF3;
-    document.querySelector('.max').textContent = maxtemp_cF3
-    document.querySelector('.min').textContent = mintemp_cF3
+    document.querySelector('.avg').textContent = avrgTemPF3;+"°"
+    document.querySelector('.max').textContent = maxtemp_cF3+"°"
+    document.querySelector('.min').textContent = mintemp_cF3+"°"
     document.querySelector('.condition').textContent = conditionTextF3
     document.querySelector('.day1').textContent = dayNameF1
     document.querySelector('.day2').textContent = dayNameF2
     document.querySelector('.day3').textContent = dayNameF3
-    document.querySelector('.temp1').textContent = avrgTemPF1
-    document.querySelector('.temp2').textContent = avrgTemPF2
-    document.querySelector('.temp3').textContent = avrgTemPF3
+    document.querySelector('.temp1').textContent = avrgTemPF1+"°"
+    document.querySelector('.temp2').textContent = avrgTemPF2+"°"
+    document.querySelector('.temp3').textContent = avrgTemPF3+"°"
     const statusElement = document.querySelector('.status');
 
     statusElement.style.backgroundImage = `url('${iconF3}')`;
@@ -62,7 +62,7 @@ export function updateWeatherUI3() {
 export function checkAndChangeBackground3() {
     // Check if conditionF3 is defined properly and is mutable
     if (conditionF3 === 1000) {
-        document.body.style.backgroundImage = "url('/src/images/sunny.jpg')";
+        document.body.style.backgroundImage = "url('./src/images/sunny.jpg')";
     } else if (conditionF3 === 1003) {
         document.body.style.backgroundImage = "url('/src/images/p-cloudy.jpg')";
     } else if (conditionF3 === 1006) {

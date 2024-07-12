@@ -5,13 +5,13 @@ import { updateWeatherUI2, checkAndChangeBackground2 } from "./ui2";
 import { updateWeatherUI3, checkAndChangeBackground3 } from "./ui3";
 
 
-
-
-
+ 
 initializeLocationSearch()
+
 const selectedCities = []
 let city1 = null;
 let city2 = null;
+
 
 
 
@@ -66,3 +66,5 @@ export { selectedCities, city1,city2 }
 
 
 
+ 
+ 

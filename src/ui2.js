@@ -31,16 +31,16 @@ import { dayNameF1, dayNameF2,dayNameF3 } from './ui';
 export function updateWeatherUI2() {
     // Update UI elements with weatherData
     // Example: assuming there are DOM manipulation methods
-    document.querySelector('.avg').textContent = avrgTemPF2;
-    document.querySelector('.max').textContent = maxtemp_cF2
-    document.querySelector('.min').textContent = mintemp_cF2
+    document.querySelector('.avg').textContent = avrgTemPF2;+"°"
+    document.querySelector('.max').textContent = maxtemp_cF2+"°"
+    document.querySelector('.min').textContent = mintemp_cF2+"°"
     document.querySelector('.condition').textContent = conditionTextF2
     document.querySelector('.day1').textContent = dayNameF1
     document.querySelector('.day2').textContent = dayNameF2
     document.querySelector('.day3').textContent = dayNameF3
-    document.querySelector('.temp1').textContent = avrgTemPF1
-    document.querySelector('.temp2').textContent = avrgTemPF2
-    document.querySelector('.temp3').textContent = avrgTemPF3
+    document.querySelector('.temp1').textContent = avrgTemPF1+"°"
+    document.querySelector('.temp2').textContent = avrgTemPF2+"°"
+    document.querySelector('.temp3').textContent = avrgTemPF3+"°"
     const statusElement = document.querySelector('.status');
 
     statusElement.style.backgroundImage = `url('${iconF2}')`;
