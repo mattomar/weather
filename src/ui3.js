@@ -62,7 +62,7 @@ export function updateWeatherUI3() {
 export function checkAndChangeBackground3() {
     // Check if conditionF3 is defined properly and is mutable
     if (conditionF3 === 1000) {
-        document.body.style.backgroundImage = "url('./src/images/sunny.jpg')";
+        document.body.style.backgroundImage = "url('./images/sunny.jpg')";
     } else if (conditionF3 === 1003) {
         document.body.style.backgroundImage = "url('/src/images/p-cloudy.jpg')";
     } else if (conditionF3 === 1006) {
