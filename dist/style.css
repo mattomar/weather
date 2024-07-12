@@ -1,0 +1,452 @@
+ body {
+     min-height: 100vh;
+     margin: 0;
+     padding: 0;
+     background-color: rgb(4, 66, 66);
+     font-family: 'ra';
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     overflow-x: hidden; /* Prevent horizontal overflow */
+
+     /* Add text shadow for better visibility */
+
+
+ }
+
+ @font-face {
+     font-family: 'ra';
+     src: url('/src/fonts/Playwrite_FR_Moderne/static/PlaywriteFRModerne-Light.ttf') format('truetype');
+ }
+
+ .grid-contain {
+     display: grid;
+     grid-template-columns: 2.5fr 6fr 3.5fr;
+     grid-template-rows: 0.8fr 1fr 1fr;
+     height: 100vh;
+
+ }
+
+ .over-all {
+     border: 1px solid rgb(255, 255, 255);
+     display: grid;
+     grid-template-rows: 1fr 2.5fr 3fr;
+     grid-row: 1/-1;
+     grid-column: 1/2;
+     margin: 30px;
+     border-radius: 20px;
+     backdrop-filter: blur(10px);
+     overflow: hidden;
+     width: 200px;
+
+
+ }
+
+
+ .title {
+     grid-row: 1/2;
+     color: rgb(255, 255, 255);
+     display: flex;
+     justify-content: center;
+     /* Center horizontally */
+     align-items: center;
+     /* Center vertically */
+     font-size: 0.9rem;
+     padding-top: 50px;
+     position: relative;
+     /* Needed for positioning the pseudo-element */
+ }
+
+ .title::after {
+     content: '';
+     position: absolute;
+     bottom: -2px;
+     /* Adjust this value to control the distance of the line from text */
+     left: 0;
+     width: 100%;
+     /* Adjust this value to control the width of the line */
+     height: 2px;
+     /* Adjust this value to control the thickness of the line */
+     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+     border-radius: 5px;
+     /* Adjust this value to control the curve radius */
+     transform-origin: center;
+     transform: scaleX(0.7);
+ }
+
+
+ .status {
+     grid-row: 2/3;
+     height: 121px;
+     display: flex;
+     justify-content: center;
+     /* Center horizontally */
+     align-items: flex-start;
+     /* Align items to the top */
+     background-color: rgba(22, 63, 63, 0.8);
+     /* Semi-transparent background */
+     margin-top: 35px;
+     margin-right: 10px;
+     margin-left: 10px;
+     border-radius: 20px;
+     position: relative;
+     /* Required for absolute positioning */
+     overflow: hidden;
+     /* Hide overflow content */
+     backdrop-filter: blur(10px);
+     /* Apply a blur effect to the background */
+     max-width: 190px;
+     /* Adjust the max-width as per your design */
+     overflow: hidden;
+     /* Prevent content overflow */
+ }
+
+ /* Optional: Adjust children elements */
+ .status>* {
+     position: relative;
+     /* Ensure children respect parent's positioning */
+     z-index: 1;
+     /* Ensure children are above the blurred background */
+ }
+
+ /* Optional: Pseudo-element to create a subtle gradient overlay */
+ .status::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+     z-index: 0;
+     /* Behind other content */
+     pointer-events: none;
+     /* Allow interaction with content behind */
+ }
+
+ .status-tit {
+     position: absolute;
+     top: -25px;
+     left: 0;
+     font-size: 0.7rem;
+     color: #e7e6e6;
+
+
+
+ }
+
+
+
+
+
+ .earth img {
+     width: 200px;
+     /* Adjust the width as needed */
+     height: auto;
+     /* Maintain aspect ratio */
+ }
+
+
+
+ .location {
+     height: 30px;
+     display: flex;
+     justify-content: center;
+     /* Center horizontally */
+     align-items: center;
+     /* Align items vertically */
+     background-color: rgba(11, 46, 46, 0.8);
+     /* Semi-transparent background color */
+     margin-bottom: 35px;
+     margin-right: 10px;
+     margin-left: 10px;
+     border-radius: 20px;
+     overflow: hidden;
+     /* Hide overflow content */
+     backdrop-filter: blur(5px);
+     /* Apply a blur effect to the background */
+     position: relative;
+     /* Required for z-index */
+     white-space: nowrap;
+     /* Prevent text wrapping */
+     text-overflow: ellipsis;
+     /* Show ellipsis (...) for overflow text */
+ }
+
+ #locationDisplay {
+     font-size: 0.7rem;
+     color: #ffffff;
+     /* White text color */
+     font-family: 'ra';
+     /* Specify your font-family */
+     z-index: 1;
+     /* Ensure text is above blurred background */
+     position: relative;
+     /* Ensure z-index works */
+     max-width: 100%;
+     /* Ensure text does not exceed container width */
+     overflow: hidden;
+     /* Hide overflow content */
+     text-overflow: ellipsis;
+     /* Show ellipsis (...) for overflow text */
+     max-width: 190px;
+     /* Adjust the max-width as per your design */
+ }
+
+
+ input {
+      /* Remove focus outline */
+     font-size: 0.7rem;
+      font-family: 'ra';
+     width: 96%;
+     /* Ensure full width */
+      border-radius: 5px;
+       margin-top: 70px;
+ }
+
+ /* Optional: Style the placeholder text */
+ ::placeholder {
+     font-size: 0.7rem;
+      font-family: 'ra';
+      color: black;
+
+ }
+
+
+ .temp-info {
+     grid-row: 1/2;
+     grid-column: 2/3;
+     margin-top: 90px;
+     display: flex;
+     gap: 40px;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     /* Add text shadow for better visibility */
+
+ }
+
+
+ .avg {
+     font-size: 2.2rem;
+     font-weight: 900;
+     margin-top: 14px;
+
+
+ }
+
+ .max-min {
+     font-size: 0.6rem;
+     margin-top: 15px;
+     font-weight: 900;
+
+
+
+ }
+
+
+ .max,
+ .min {
+     position: relative;
+     width: 88px;
+     height: 25px;
+     margin: 5px;
+     border-radius: 10px;
+     text-align: right;
+     padding-right: 5px;
+     padding-top: 3px;
+     border: 1px solid rgb(255, 255, 255);
+     backdrop-filter: blur(10px);
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     /* Add text shadow for better visibility */
+
+
+ }
+
+ .max::before {
+     content: "H";
+     position: absolute;
+     left: 5px;
+     top: 3px;
+ }
+
+ .min::before {
+     content: "L";
+     /* Text you want to add */
+     position: absolute;
+     /* Position relative to the container */
+     left: 5px;
+     /* Adjust as needed to position the text */
+
+ }
+
+
+
+ .condition {
+     grid-row: 2/3;
+     grid-column: 2/3;
+     margin-top: 100px;
+     color: #ffffff;
+     font-size: 2.0rem;
+     font-weight: 900;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     /* Add text shadow for better visibility */
+
+
+
+ }
+
+ .days {
+     grid-row: 3/4;
+     grid-column: 2/-1;
+     display: flex;
+     justify-content: space-between;
+     color: #ffffff;
+     font-weight: 600;
+     padding-right: 30px;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     /* Add text shadow for better visibility */
+
+ }
+
+ .day-Card {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+     /* Needed for absolute positioning of the line */
+
+ }
+
+ .days::after {
+     content: '';
+     position: absolute;
+     top: 480px;
+     /* Initial position */
+     left: 0;
+     width: 100%;
+     height: 1px;
+     /* Thickness of the line */
+     background-color: #ffffff;
+     /* Color of the line */
+     z-index: -1;
+     /* Ensure it's behind the content */
+     background-image: url(/src/images/cloudy.jpg);
+ }
+
+
+
+
+ .temp1,
+ .temp2,
+ .temp3 {
+     padding-top: 90px;
+     font-size: 1.2rem;
+     justify-content: center;
+ }
+
+ .day1,
+ .day2,
+ .day3 {
+     cursor: pointer;
+ }
+
+
+ .lastCity {
+     display: flex;
+     grid-row: 2/3;
+     grid-column: 3/4;
+     gap: 10px;
+     justify-content: flex-end;
+     padding-right: 30px;
+
+ }
+ 
+
+ .card,
+ .card2 {
+     border: 1px solid rgb(255, 255, 255);
+     width: 140px;
+     height: 110px;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+     border-radius: 20px;
+     backdrop-filter: blur(10px);
+
+ }
+
+
+.card::before {
+    content: "Last searched "; /* Example date */
+    position: absolute;
+    top: -30px; /* Adjust position above upper content */
+     font-size: 0.8rem;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+
+ .upper {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ .icon-upper1,
+ .icon-upper2 {
+     width: 50px;
+     height: 50px;
+
+
+
+ }
+
+
+ .location1,
+ .location2 {
+     display: flex;
+     overflow: hidden;
+     /* Hide any content that overflows */
+     white-space: nowrap;
+     /* Ensure the text stays on one line */
+     text-overflow: ellipsis;
+     /* Show an ellipsis (...) when text overflows */
+     width: 150x;
+     /* Adjust width as needed */
+     height: 22px;
+     /* Adjust height as needed */
+     font-size: 0.7rem;
+     font-weight: 900;
+     justify-content: center;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     /* Add text shadow for better visibility */
+     padding-top: 5px;
+
+ }
+
+
+ .condition1,
+ .condition2 {
+     display: flex;
+     overflow: hidden;
+     /* Hide any content that overflows */
+     white-space: nowrap;
+     /* Ensure the text stays on one line */
+     text-overflow: ellipsis;
+     /* Show an ellipsis (...) when text overflows */
+     width: 150x;
+     /* Adjust width as needed */
+     height: 22px;
+     /* Adjust height as needed */
+     font-size: 0.7rem;
+     font-weight: 900;
+     justify-content: center;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+ }
+
+ .xxx{
+    grid-row: 1/2;
+    grid-column: 3/4;
+ }
+
+ 
