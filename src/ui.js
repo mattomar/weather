@@ -83,109 +83,104 @@ export function updateWeatherUI() {
     console.log(dayNameF3)
     // Update other UI elements as needed
 }
-
 export function checkAndChangeBackground() {
     // Check if conditionF1 is defined properly and is mutable
     if (conditionF1 === 1000) {
         document.body.style.backgroundImage = "url('./images/sunny.jpg')";
     } else if (conditionF1 === 1003) {
-        document.body.style.backgroundImage = "url('/src/images/p-cloudy.jpg')";
+        document.body.style.backgroundImage = "url('./images/p-cloudy.jpg')";
     } else if (conditionF1 === 1006) {
-        document.body.style.backgroundImage = "url('/src/images/cloudy.jpg')";
+        document.body.style.backgroundImage = "url('./images/cloudy.jpg')";
     } else if (conditionF1 === 1009) {
-        document.body.style.backgroundImage = "url('/src/images/overcast.jpg')";
+        document.body.style.backgroundImage = "url('./images/overcast.jpg')";
     } else if (conditionF1 === 1030) {
-        document.body.style.backgroundImage = "url('/src/images/mist.jpg')";
+        document.body.style.backgroundImage = "url('./images/mist.jpg')";
     } else if (conditionF1 === 1063) {
-        document.body.style.backgroundImage = "url('/src/images/patchyrain.jpg')";
+        document.body.style.backgroundImage = "url('./images/patchyrain.jpg')";
     } else if (conditionF1 === 1066) {
-        document.body.style.backgroundImage = "url('/src/images/patchysnow.jpg')";
+        document.body.style.backgroundImage = "url('./images/patchysnow.jpg')";
     } else if (conditionF1 === 1069) {
-        document.body.style.backgroundImage = "url('/src/images/patchysleet.jpg')";
+        document.body.style.backgroundImage = "url('./images/patchysleet.jpg')";
     } else if (conditionF1 === 1072) {
-        document.body.style.backgroundImage = "url('/src/images/patchy-drizzle.jpg')";
+        document.body.style.backgroundImage = "url('./images/patchy-drizzle.jpg')";
     } else if (conditionF1 === 1087) {
-        document.body.style.backgroundImage = "url('/src/images/thyunderyoutbreaks.jpg')";
+        document.body.style.backgroundImage = "url('./images/thyunderyoutbreaks.jpg')";
     } else if (conditionF1 === 1114) {
-        document.body.style.backgroundImage = "url('/src/images/snow .jpg')";
+        document.body.style.backgroundImage = "url('./images/snow.jpg')";
     } else if (conditionF1 === 1117) {
-        document.body.style.backgroundImage = "url('/src/images/blizard.jpg')";
-    }  else if (conditionF1 === 1135) {
-        document.body.style.backgroundImage = "url('/src/images/fog.jpg')";
+        document.body.style.backgroundImage = "url('./images/blizard.jpg')";
+    } else if (conditionF1 === 1135) {
+        document.body.style.backgroundImage = "url('./images/fog.jpg')";
     } else if (conditionF1 === 1147) {
-        document.body.style.backgroundImage = "url('/src/images/freezing-fog.jpg')";
+        document.body.style.backgroundImage = "url('./images/freezing-fog.jpg')";
     } else if (conditionF1 === 1150) {
-        document.body.style.backgroundImage = "url('/src/images/drizzle.jpg')";
+        document.body.style.backgroundImage = "url('./images/drizzle.jpg')";
     } else if (conditionF1 === 1153) {
-        document.body.style.backgroundImage = "url('/src/images/drizzle.jpg')";
-    }  else if (conditionF1 === 1168) {
-        document.body.style.backgroundImage = "url('/src/images/drizzle.jpg')";
+        document.body.style.backgroundImage = "url('./images/drizzle.jpg')";
+    } else if (conditionF1 === 1168) {
+        document.body.style.backgroundImage = "url('./images/drizzle.jpg')";
     } else if (conditionF1 === 1171) {
-        document.body.style.backgroundImage = "url('/src/images/drizzle.jpg')";
+        document.body.style.backgroundImage = "url('./images/drizzle.jpg')";
     } else if (conditionF1 === 1080) {
-        document.body.style.backgroundImage = "url('/src/images/patchyrain.jpg')";
+        document.body.style.backgroundImage = "url('./images/patchyrain.jpg')";
     } else if (conditionF1 === 1083) {
-        document.body.style.backgroundImage = "url('/src/images/patchyrain.jpg')";
-    }  else if (conditionF1 === 1086) {
-        document.body.style.backgroundImage = "url('/src/images/moderate-rain.jpg')";
-    }  else if (conditionF1 === 1189) {
-        document.body.style.backgroundImage = "url('/src/images/moderate-rain.jpg')";
+        document.body.style.backgroundImage = "url('./images/patchyrain.jpg')";
+    } else if (conditionF1 === 1086) {
+        document.body.style.backgroundImage = "url('./images/moderate-rain.jpg')";
+    } else if (conditionF1 === 1189) {
+        document.body.style.backgroundImage = "url('./images/moderate-rain.jpg')";
     } else if (conditionF1 === 1192) {
-        document.body.style.backgroundImage = "url('/src/images/heavy-rain.jpg')";
+        document.body.style.backgroundImage = "url('./images/heavy-rain.jpg')";
     } else if (conditionF1 === 1195) {
-        document.body.style.backgroundImage = "url('/src/images/heavy-rain.jpg')";
+        document.body.style.backgroundImage = "url('./images/heavy-rain.jpg')";
     } else if (conditionF1 === 1198) {
-        document.body.style.backgroundImage = "url('/src/images/heavy-rain.jpg')";
+        document.body.style.backgroundImage = "url('./images/heavy-rain.jpg')";
     } else if (conditionF1 === 1201) {
-        document.body.style.backgroundImage = "url('/src/images/heavy-rain.jpg')";
+        document.body.style.backgroundImage = "url('./images/heavy-rain.jpg')";
     } else if (conditionF1 === 1204) {
-        document.body.style.backgroundImage = "url('/src/images/sleet.jpg')";
+        document.body.style.backgroundImage = "url('./images/sleet.jpg')";
     } else if (conditionF1 === 1210) {
-        document.body.style.backgroundImage = "url('/src/images/snow.jpg')";
+        document.body.style.backgroundImage = "url('./images/snow.jpg')";
     } else if (conditionF1 === 1213) {
-        document.body.style.backgroundImage = "url('/src/images/snow.jpg')";
+        document.body.style.backgroundImage = "url('./images/snow.jpg')";
     } else if (conditionF1 === 1216) {
-        document.body.style.backgroundImage = "url('/src/images/snow.jpg')";
+        document.body.style.backgroundImage = "url('./images/snow.jpg')";
     } else if (conditionF1 === 1219) {
-        document.body.style.backgroundImage = "url('/src/images/snow.jpg')";
+        document.body.style.backgroundImage = "url('./images/snow.jpg')";
     } else if (conditionF1 === 1222) {
-        document.body.style.backgroundImage = "url('/src/images/snow.jpg')";
+        document.body.style.backgroundImage = "url('./images/snow.jpg')";
     } else if (conditionF1 === 1225) {
-        document.body.style.backgroundImage = "url('/src/images/snow.jpg')";
+        document.body.style.backgroundImage = "url('./images/snow.jpg')";
     } else if (conditionF1 === 1237) {
-        document.body.style.backgroundImage = "url('/src/images/sleet.jpg')";
+        document.body.style.backgroundImage = "url('./images/sleet.jpg')";
     } else if (conditionF1 === 1240) {
-        document.body.style.backgroundImage = "url('/src/images/patchyrain.jpg')";
-    }  else if (conditionF1 === 1243) {
-        document.body.style.backgroundImage = "url('/src/images/patchyrain.jpg')";
+        document.body.style.backgroundImage = "url('./images/patchyrain.jpg')";
+    } else if (conditionF1 === 1243) {
+        document.body.style.backgroundImage = "url('./images/patchyrain.jpg')";
     } else if (conditionF1 === 1246) {
-        document.body.style.backgroundImage = "url('/src/images/patchyrain.jpg')";
+        document.body.style.backgroundImage = "url('./images/patchyrain.jpg')";
     } else if (conditionF1 === 1249) {
-        document.body.style.backgroundImage = "url('/src/images/sleet.jpg')";
+        document.body.style.backgroundImage = "url('./images/sleet.jpg')";
     } else if (conditionF1 === 1252) {
-        document.body.style.backgroundImage = "url('/src/images/sleet.jpg')";
+        document.body.style.backgroundImage = "url('./images/sleet.jpg')";
     } else if (conditionF1 === 1255) {
-        document.body.style.backgroundImage = "url('/src/images/snow.jpg')";
+        document.body.style.backgroundImage = "url('./images/snow.jpg')";
     } else if (conditionF1 === 1258) {
-        document.body.style.backgroundImage = "url('/src/images/snow.jpg')";
-    }  else if (conditionF1 === 1261) {
-        document.body.style.backgroundImage = "url('/src/images/sleet.jpg')";
-    }  else if (conditionF1 === 1264) {
-        document.body.style.backgroundImage = "url('/src/images/sleet.jpg')";
+        document.body.style.backgroundImage = "url('./images/snow.jpg')";
+    } else if (conditionF1 === 1261) {
+        document.body.style.backgroundImage = "url('./images/sleet.jpg')";
+    } else if (conditionF1 === 1264) {
+        document.body.style.backgroundImage = "url('./images/sleet.jpg')";
     } else if (conditionF1 === 1276) {
-        document.body.style.backgroundImage = "url('/src/images/thunderstorm-heavy.jpg')";
+        document.body.style.backgroundImage = "url('./images/thunderstorm-heavy.jpg')";
     } else if (conditionF1 === 1273) {
-        document.body.style.backgroundImage = "url('/src/images/thyunderyoutbreaks.jpg')";
+        document.body.style.backgroundImage = "url('./images/thyunderyoutbreaks.jpg')";
     } else if (conditionF1 === 1279) {
-        document.body.style.backgroundImage = "url('/src/images/snow.jpg')";
+        document.body.style.backgroundImage = "url('./images/snow.jpg')";
     } else if (conditionF1 === 1282) {
-        document.body.style.backgroundImage = "url('/src/images/snow.jpg')";
-    } 
-    
-    
-    
-    
-    
+        document.body.style.backgroundImage = "url('./images/snow.jpg')";
+    }
+
     // Optionally, set other background properties like repeat and size
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover"; // Adjust as per your image requirements
