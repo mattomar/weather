@@ -83,105 +83,114 @@ export function updateWeatherUI() {
     console.log(dayNameF3)
     // Update other UI elements as needed
 }
-export function checkAndChangeBackground() {
-    // Check if conditionF1 is defined properly and is mutable
-    if (conditionF1 === 1000) {
-        document.body.style.backgroundImage = "url('./images/sunny.jpg')";
-    } else if (conditionF1 === 1003) {
-        document.body.style.backgroundImage = "url('./images/p-cloudy.jpg')";
-    } else if (conditionF1 === 1006) {
-        document.body.style.backgroundImage = "url('./images/cloudy.jpg')";
-    } else if (conditionF1 === 1009) {
-        document.body.style.backgroundImage = "url('./images/overcast.jpg')";
-    } else if (conditionF1 === 1030) {
-        document.body.style.backgroundImage = "url('./images/mist.jpg')";
-    } else if (conditionF1 === 1063) {
-        document.body.style.backgroundImage = "url('./images/patchyrain.jpg')";
-    } else if (conditionF1 === 1066) {
-        document.body.style.backgroundImage = "url('./images/patchysnow.jpg')";
-    } else if (conditionF1 === 1069) {
-        document.body.style.backgroundImage = "url('./images/patchysleet.jpg')";
-    } else if (conditionF1 === 1072) {
-        document.body.style.backgroundImage = "url('./images/patchy-drizzle.jpg')";
-    } else if (conditionF1 === 1087) {
-        document.body.style.backgroundImage = "url('./images/thyunderyoutbreaks.jpg')";
-    } else if (conditionF1 === 1114) {
-        document.body.style.backgroundImage = "url('./images/snow.jpg')";
-    } else if (conditionF1 === 1117) {
-        document.body.style.backgroundImage = "url('./images/blizard.jpg')";
-    } else if (conditionF1 === 1135) {
-        document.body.style.backgroundImage = "url('./images/fog.jpg')";
-    } else if (conditionF1 === 1147) {
-        document.body.style.backgroundImage = "url('./images/freezing-fog.jpg')";
-    } else if (conditionF1 === 1150) {
-        document.body.style.backgroundImage = "url('./images/drizzle.jpg')";
-    } else if (conditionF1 === 1153) {
-        document.body.style.backgroundImage = "url('./images/drizzle.jpg')";
-    } else if (conditionF1 === 1168) {
-        document.body.style.backgroundImage = "url('./images/drizzle.jpg')";
-    } else if (conditionF1 === 1171) {
-        document.body.style.backgroundImage = "url('./images/drizzle.jpg')";
-    } else if (conditionF1 === 1080) {
-        document.body.style.backgroundImage = "url('./images/patchyrain.jpg')";
-    } else if (conditionF1 === 1083) {
-        document.body.style.backgroundImage = "url('./images/patchyrain.jpg')";
-    } else if (conditionF1 === 1086) {
-        document.body.style.backgroundImage = "url('./images/moderate-rain.jpg')";
-    } else if (conditionF1 === 1189) {
-        document.body.style.backgroundImage = "url('./images/moderate-rain.jpg')";
-    } else if (conditionF1 === 1192) {
-        document.body.style.backgroundImage = "url('./images/heavy-rain.jpg')";
-    } else if (conditionF1 === 1195) {
-        document.body.style.backgroundImage = "url('./images/heavy-rain.jpg')";
-    } else if (conditionF1 === 1198) {
-        document.body.style.backgroundImage = "url('./images/heavy-rain.jpg')";
-    } else if (conditionF1 === 1201) {
-        document.body.style.backgroundImage = "url('./images/heavy-rain.jpg')";
-    } else if (conditionF1 === 1204) {
-        document.body.style.backgroundImage = "url('./images/sleet.jpg')";
-    } else if (conditionF1 === 1210) {
-        document.body.style.backgroundImage = "url('./images/snow.jpg')";
-    } else if (conditionF1 === 1213) {
-        document.body.style.backgroundImage = "url('./images/snow.jpg')";
-    } else if (conditionF1 === 1216) {
-        document.body.style.backgroundImage = "url('./images/snow.jpg')";
-    } else if (conditionF1 === 1219) {
-        document.body.style.backgroundImage = "url('./images/snow.jpg')";
-    } else if (conditionF1 === 1222) {
-        document.body.style.backgroundImage = "url('./images/snow.jpg')";
-    } else if (conditionF1 === 1225) {
-        document.body.style.backgroundImage = "url('./images/snow.jpg')";
-    } else if (conditionF1 === 1237) {
-        document.body.style.backgroundImage = "url('./images/sleet.jpg')";
-    } else if (conditionF1 === 1240) {
-        document.body.style.backgroundImage = "url('./images/patchyrain.jpg')";
-    } else if (conditionF1 === 1243) {
-        document.body.style.backgroundImage = "url('./images/patchyrain.jpg')";
-    } else if (conditionF1 === 1246) {
-        document.body.style.backgroundImage = "url('./images/patchyrain.jpg')";
-    } else if (conditionF1 === 1249) {
-        document.body.style.backgroundImage = "url('./images/sleet.jpg')";
-    } else if (conditionF1 === 1252) {
-        document.body.style.backgroundImage = "url('./images/sleet.jpg')";
-    } else if (conditionF1 === 1255) {
-        document.body.style.backgroundImage = "url('./images/snow.jpg')";
-    } else if (conditionF1 === 1258) {
-        document.body.style.backgroundImage = "url('./images/snow.jpg')";
-    } else if (conditionF1 === 1261) {
-        document.body.style.backgroundImage = "url('./images/sleet.jpg')";
-    } else if (conditionF1 === 1264) {
-        document.body.style.backgroundImage = "url('./images/sleet.jpg')";
-    } else if (conditionF1 === 1276) {
-        document.body.style.backgroundImage = "url('./images/thunderstorm-heavy.jpg')";
-    } else if (conditionF1 === 1273) {
-        document.body.style.backgroundImage = "url('./images/thyunderyoutbreaks.jpg')";
-    } else if (conditionF1 === 1279) {
-        document.body.style.backgroundImage = "url('./images/snow.jpg')";
-    } else if (conditionF1 === 1282) {
-        document.body.style.backgroundImage = "url('./images/snow.jpg')";
+export function checkAndChangeBackground () {
+    let imageUrl;
+
+    switch (conditionF1) {
+        case 1000:
+            imageUrl = "./images/sunny.jpg";
+            break;
+        case 1003:
+            imageUrl = "./images/p-cloudy.jpg";
+            break;
+        case 1006:
+            imageUrl = "./images/cloudy.jpg";
+            break;
+        case 1009:
+            imageUrl = "./images/overcast.jpg";
+            break;
+        case 1030:
+            imageUrl = "./images/mist.jpg";
+            break;
+        case 1063:
+            imageUrl = "./images/patchyrain.jpg";
+            break;
+        case 1066:
+            imageUrl = "./images/patchysnow.jpg";
+            break;
+        case 1069:
+            imageUrl = "./images/patchysleet.jpg";
+            break;
+        case 1072:
+            imageUrl = "./images/patchy-drizzle.jpg";
+            break;
+        case 1087:
+            imageUrl = "./images/thyunderyoutbreaks.jpg";
+            break;
+        case 1114:
+            imageUrl = "./images/snow.jpg";
+            break;
+        case 1117:
+            imageUrl = "./images/blizard.jpg";
+            break;
+        case 1135:
+            imageUrl = "./images/fog.jpg";
+            break;
+        case 1147:
+            imageUrl = "./images/freezing-fog.jpg";
+            break;
+        case 1150:
+        case 1153:
+        case 1168:
+        case 1171:
+            imageUrl = "./images/drizzle.jpg";
+            break;
+        case 1080:
+        case 1083:
+            imageUrl = "./images/patchyrain.jpg";
+            break;
+        case 1086:
+        case 1189:
+            imageUrl = "./images/moderate-rain.jpg";
+            break;
+        case 1192:
+        case 1195:
+        case 1198:
+        case 1201:
+            imageUrl = "./images/heavy-rain.jpg";
+            break;
+        case 1204:
+        case 1237:
+        case 1249:
+        case 1252:
+        case 1255:
+        case 1258:
+            imageUrl = "./images/sleet.jpg";
+            break;
+        case 1210:
+        case 1213:
+        case 1216:
+        case 1219:
+        case 1222:
+        case 1225:
+            imageUrl = "./images/snow.jpg";
+            break;
+        case 1240:
+        case 1243:
+        case 1246:
+            imageUrl = "./images/patchyrain.jpg";
+            break;
+        case 1261:
+        case 1264:
+            imageUrl = "./images/sleet.jpg";
+            break;
+        case 1276:
+            imageUrl = "./images/thunderstorm-heavy.jpg";
+            break;
+        case 1273:
+            imageUrl = "./images/thyunderyoutbreaks.jpg";
+            break;
+        case 1279:
+        case 1282:
+            imageUrl = "./images/snow.jpg";
+            break;
+        default:
+            // Default image if no condition matches
+            imageUrl = "./images/default.jpg";
+            break;
     }
 
-    // Optionally, set other background properties like repeat and size
+    document.body.style.backgroundImage = `url('${imageUrl}')`;
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover"; // Adjust as per your image requirements
 }

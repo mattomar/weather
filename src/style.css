@@ -155,8 +155,7 @@
      /* Align items vertically */
      background-color: rgba(11, 46, 46, 0.8);
      /* Semi-transparent background color */
-     margin-bottom: 35px;
-     margin-right: 10px;
+      margin-right: 10px;
      margin-left: 10px;
      border-radius: 20px;
      overflow: hidden;
@@ -169,7 +168,8 @@
      /* Prevent text wrapping */
      text-overflow: ellipsis;
      /* Show ellipsis (...) for overflow text */
- }
+
+  }
 
  #locationDisplay {
      font-size: 0.7rem;
@@ -189,7 +189,8 @@
      /* Show ellipsis (...) for overflow text */
      max-width: 190px;
      /* Adjust the max-width as per your design */
- }
+
+  }
 
 
  input {
