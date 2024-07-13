@@ -14,7 +14,7 @@
 
  @font-face {
      font-family: 'ra';
-     src: url('/src/fonts/Playwrite_FR_Moderne/static/PlaywriteFRModerne-Light.ttf') format('truetype');
+     src: url('./fonts/Playwrite_FR_Moderne/static/PlaywriteFRModerne-Light.ttf') format('truetype');
  }
 
  .grid-contain {
